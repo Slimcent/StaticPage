@@ -1,20 +1,51 @@
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+* {
+  box-sizing: border-box;
 }
 
-.nav-items{
-  list-style-type: none;
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.nav{
   display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 80px;
+  padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--title {
+  margin: 0;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  color: #DEEBF8;
+  font-weight: 600;
 }
 
 .nav-items > li {
   padding: 10px;
 }
 
-.nav-logo{
-  width: 40px;
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 7px;
 }
 
 .App-header {
