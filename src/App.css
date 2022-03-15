@@ -5,13 +5,15 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
 }
 
 .nav{
   display: flex;
   align-items: center;
   background-color: #21222A;
-  height: 80px;
+  height: 70px;
   padding: 30px 25px;
 }
 
@@ -22,12 +24,21 @@ body {
 .nav-items {
   list-style: none;
   display: flex;
-  color: #DEEBF8;
-  font-weight: 600;
+  color: white;
+  /* color: #DEEBF8; */
+  font-weight: 400;
+  font-weight: 400;
 }
 
 .nav-items > li {
   padding: 10px;
+  cursor: pointer;
+}
+
+.nav-items > li:hover {
+  border-bottom: 2px solid #61DAFB;
+  transition: 1s;
+  font-size: 18px;
 }
 
 .nav--logo_text {
@@ -37,15 +48,49 @@ body {
   font-size: 22px;
 }
 
-.nav--title {
-  color: #DEEBF8;
-  font-weight: 600;
-}
-
 .nav--icon {
   height: 30px;
   width: 30px;
   margin-right: 7px;
+}
+
+.container{
+  padding: 57px 27px;
+  color: white;
+  background-image: url(./images/logo192.png);
+  background-repeat: no-repeat;
+  background-position: right 130%;
+}
+
+.content-title{
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  border-left: 4px solid #61DAFB;
+  padding-left: 13px;
+}
+
+.content-facts{
+  margin-top: 35px;
+  max-width: 400px;
+}
+
+.content-facts > li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.content-facts > li::marker{
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+footer{
+  color: white;
+  text-align: center;
+  background-color: #21222A;
+  height: 60px;
+  padding: 25px 25px;
 }
 
 .App-header {
